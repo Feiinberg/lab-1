@@ -4,8 +4,8 @@ template<typename T>
 class ControllBlock {
 private:
     T* data;
-    size_t ref_count = 0;
-    size_t weak_count = 0;
+    std::size_t ref_count = 0;
+    std::size_t weak_count = 0;
 public:
 //    ControllBlock() : ref_count(0), weak_count(0), data(new T) {}
     ControllBlock() : ref_count(0), weak_count(0), data(nullptr) {}
@@ -17,10 +17,10 @@ public:
     void reset(T* newData){
         data = newData;
     }
-    size_t rRefCount() {
+    std::size_t rRefCount() {
         return ref_count;
     }
-    size_t rWeakCount() {
+    std::size_t rWeakCount() {
         return weak_count;
     }
     
