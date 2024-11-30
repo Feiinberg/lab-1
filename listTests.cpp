@@ -1,4 +1,4 @@
-#pragma once
+
 #include "Structures/myLinkedList.h"
 #include "LinkedList.h"
 #include "timer.h"

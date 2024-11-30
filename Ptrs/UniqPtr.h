@@ -6,8 +6,8 @@ class UniqPtr {
 private:
     T* ptr;
 public:
-    explicit UniqPtr(T* ptr) : ptr(ptr) {}
-    UniqPtr(): ptr(nullptr) {}
+    explicit UniqPtr(T* ptr);
+    UniqPtr();
     UniqPtr(const UniqPtr &) = delete;
     UniqPtr& operator = (const UniqPtr&) = delete;
     UniqPtr& operator = (const T&& object) {
@@ -15,19 +15,12 @@ public:
         ptr = new T(object);
         return *this;
     }
-    UniqPtr(UniqPtr&& other) noexcept : ptr(other.ptr) {
-        if (this != &other) {
-            other.ptr = nullptr;
-        }
-    }
-    UniqPtr(T&& other) noexcept {
-        ptr = new T(other);
-    }
-    T* release() {
-        T* neW = ptr;
-        ptr = nullptr;
-        return neW;
-    }
+    UniqPtr(UniqPtr&& other) noexcept;
+
+    UniqPtr(T&& other) noexcept ;
+
+    T* release() ;
+
     UniqPtr& operator = (UniqPtr&& other) noexcept {
         if (this != &other) {
             reset();
@@ -50,32 +43,19 @@ public:
         other.ptr = nullptr;
         return *this;
     }
-    ~UniqPtr() {
-        reset();
-    }
-    void reset() {
-        if (ptr) {
-            delete ptr;
-            ptr = nullptr;
-        }
-    }
-    T& get() const {
-        return *ptr;
-    }
+    ~UniqPtr() ;
+
+    void reset() ;
+
+    T& get() const ;
+
     T& operator *() {
         return *ptr;
     }
 };
 
 template<typename T>
-UniqPtr<T> make_uniq(T arg) {
-    T* ptr = new T(arg);
-    return UniqPtr<T>(ptr);
-}
+UniqPtr<T> make_uniq(T arg);
 
 template <class Cl, typename... Args>
-UniqPtr<Cl> make_uniq(Args&&... args) {
-    Cl* newP = new Cl{std::forward<Args>(args)...};
-    UniqPtr<Cl> ptr(newP);
-    return ptr;
-}
+UniqPtr<Cl> make_uniq(Args&&... args) ;
