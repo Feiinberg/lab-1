@@ -23,4 +23,8 @@ add_executable(1lab
         tests.h
         z.cpp
         listTests.cpp
-        tests.cpp)
+        tests.cpp
+        Ptrs/ControlBlock.cpp
+        Ptrs/SharedPtr.cpp
+        Ptrs/UniqPtr.cpp
+        Ptrs/WeakPtr.cpp)

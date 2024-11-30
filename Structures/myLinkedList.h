@@ -1,6 +1,8 @@
-
 #pragma once
+
+#include <iostream>
 #include "WeakPtr.h"
+
 template <typename T>
 class myLinkedList {
 private:
@@ -12,6 +14,7 @@ private:
     };
     SharedPtr<Node> head;
     size_t size;
+
 public:
     myLinkedList(): size(0), head(nullptr) {}
     myLinkedList(const myLinkedList<T>& list): size(list.size) {
@@ -21,6 +24,7 @@ public:
             cur = cur->next;
         }
     }
+
     T& get(size_t index) {
         SharedPtr<Node> q = head;
         for (size_t i = 0; i < index && i < size; ++i) {
@@ -28,6 +32,7 @@ public:
         }
         return q->val;
     }
+
     ~myLinkedList() {
         while (head.get()) {
             del();

@@ -1,5 +1,5 @@
 
-#pragma once
+
 #include "Ptrs/UniqPtr.h"
 #include <cassert>
 //#include "WeakPtr.h"

@@ -6,7 +6,7 @@
 
 int main() {
     testOperatorAssigment();
-    testCircleList();
+  testCircleList();
     functional_tests_shrdptr();
     functional_tests_unqptr();
     testsLinked();
