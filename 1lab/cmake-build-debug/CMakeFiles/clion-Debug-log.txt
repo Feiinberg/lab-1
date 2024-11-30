@@ -1,1 +1,0 @@
-CMakeLists.txt not found in C:\Users\grish\Documents\C++ Projects\lab 1\1lab\1lab Select CMakeLists.txt
