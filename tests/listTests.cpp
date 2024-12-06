@@ -1,6 +1,6 @@
 #include "Structures/myLinkedList.h"
 #include "LinkedList.h"
-#include "timer.h"
+#include "tests/util/timer.h"
 
 #include "listTests.h"
 

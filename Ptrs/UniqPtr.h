@@ -33,4 +33,4 @@ template <class Cl, typename... Args>
 UniqPtr<Cl> make_uniq(Args&&... args);
 
 // Подключение файла реализации
-#include "UniqPtr.tpp"
+#include "Ptrs/Impl/UniqPtr.tpp"

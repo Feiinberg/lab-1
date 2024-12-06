@@ -59,4 +59,4 @@ public:
     Iterator begin() const;
 };
 
-#include "LinkedList.tpp"
+#include "Structures/Impl/LinkedList.tpp"

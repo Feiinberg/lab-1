@@ -20,4 +20,4 @@ public:
 };
 
 // Подключение файла реализации
-#include "WeakPtr.tpp"
+#include "Ptrs/Impl/WeakPtr.tpp"

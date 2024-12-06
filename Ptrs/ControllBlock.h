@@ -28,4 +28,4 @@ public:
     explicit operator bool() const noexcept;
 };
 
-#include "ControllBlock.tpp" // Подключение файла реализации
+#include "Ptrs/Impl/ControllBlock.tpp" // Подключение файла реализации

@@ -58,3 +58,5 @@ public:
 
     Iterator begin() const;
 };
+
+#include "Impl/myDynamicArray.tpp"

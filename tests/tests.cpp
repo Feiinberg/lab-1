@@ -1,7 +1,7 @@
 #include "Ptrs/UniqPtr.h"
 #include <cassert>
 //#include "WeakPtr.h"
-#include "listTests.h"
+#include "tests/listTests.h"
 #include "tests.h"
 
 bool testOperatorAssigment() {

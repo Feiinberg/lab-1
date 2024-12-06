@@ -1,4 +1,4 @@
-#include "Timer.h"
+#include "timer.h"
 
 template<typename T>
 void timer(void (*f)(T&), T& list) {

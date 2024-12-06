@@ -52,4 +52,4 @@ public:
 };
 
 // Включаем файл с реализациями шаблонных функций
-#include "myLinkedList.tpp"
+#include "Structures/Impl/myLinkedList.tpp"

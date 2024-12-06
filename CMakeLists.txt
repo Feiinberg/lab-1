@@ -17,11 +17,11 @@ add_executable(1lab
         Structures/LinkedList.h
         Structures/myDynamicArray.h
         Structures/myLinkedList.h
-        Structures/timer.h
-        listTests.h
+        tests/util/timer.h
+        tests/listTests.h
         main.cpp
-        tests.h
+        tests/tests.h
         z.cpp
-        listTests.cpp
-        tests.cpp
-        Structures/timer.cpp)
+        tests/listTests.cpp
+        tests/tests.cpp
+        tests/util/timer.cpp)

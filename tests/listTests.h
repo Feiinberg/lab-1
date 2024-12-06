@@ -2,7 +2,7 @@
 #pragma once
 #include "Structures/myLinkedList.h"
 #include "LinkedList.h"
-#include "timer.h"
+#include "tests/util/timer.h"
 
 template<typename T>
 void appendTest(T& list);
