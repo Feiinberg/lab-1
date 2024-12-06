@@ -23,4 +23,5 @@ add_executable(1lab
         tests.h
         z.cpp
         listTests.cpp
-        tests.cpp)
+        tests.cpp
+        Structures/timer.cpp)
