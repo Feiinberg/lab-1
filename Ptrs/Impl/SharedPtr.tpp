@@ -73,10 +73,15 @@ SharedPtr<T>& SharedPtr<T>::operator=(SharedPtr&& other) noexcept {
 
 template<typename T>
 SharedPtr<T>& SharedPtr<T>::operator=(WeakPtr<T>& ptr) noexcept {
-    if (block && block != ptr.block) {
-        block->minusRefCount();
+    if (block != ptr.block) {
+        release();
         block = ptr.block;
-        block->plusRefCount();
+        if (block) {
+            obj = block->getData();
+            block->plusRefCount();
+        } else {
+            obj = nullptr;
+        }
     }
     return *this;
 }
@@ -141,4 +146,34 @@ template<class Cl, typename... Args>
 SharedPtr<Cl> make_shared(Args&&... args) {
     Cl* newP = new Cl{std::forward<Args>(args)...};
     return SharedPtr<Cl>(newP);
+}
+
+template<typename T>
+template<typename U>
+SharedPtr<T>::SharedPtr(U* ptr) : obj(ptr), block(new ControllBlock<U>()) {
+    if (ptr) {
+        block->shared_count = 1;
+    }
+}
+
+template<typename T>
+template<typename U>
+SharedPtr<T>::SharedPtr(const SharedPtr<U>& other) : obj(other.obj), block(other.block) {
+    if (block) {
+        block->shared_count++;
+    }
+}
+
+template<typename T>
+template<typename U>
+SharedPtr<T>& SharedPtr<T>::operator=(const SharedPtr<U>& other) {
+    if ((void*)this != (void*)&other) {
+        release();
+        obj = other.obj;
+        block = other.block;
+        if (block) {
+            block->shared_count++;
+        }
+    }
+    return *this;
 }

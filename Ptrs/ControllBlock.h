@@ -26,6 +26,8 @@ public:
     void minusWeakCount() noexcept;
 
     explicit operator bool() const noexcept;
+
+    T* getData() const;
 };
 
 #include "Ptrs/Impl/ControllBlock.tpp" // Подключение файла реализации

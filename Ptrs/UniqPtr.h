@@ -24,6 +24,15 @@ public:
     void reset();
     T& get() const;
     T& operator*();
+
+    template<typename U>
+    UniqPtr(U* ptr);
+
+    template<typename U>
+    UniqPtr(UniqPtr<U>&& other) noexcept;
+
+    template<typename U>
+    UniqPtr<T>& operator=(UniqPtr<U>&& other) noexcept;
 };
 
 template<typename T>

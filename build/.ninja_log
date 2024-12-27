@@ -1,0 +1,16 @@
+# ninja log v6
+11	236	7570135247000588	CMakeFiles/1lab.dir/tests/util/timer.cpp.obj	e9e866d4bdb6cf55
+3	281	7570135246920589	CMakeFiles/1lab.dir/main.cpp.obj	29c2b0d43b3733a8
+9	341	7570135246980598	CMakeFiles/1lab.dir/tests/tests.cpp.obj	41511e9142cc54a0
+7	359	7570135246960588	CMakeFiles/1lab.dir/tests/listTests.cpp.obj	a1dc9037a512e523
+359	1407	7570135250470594	1lab.exe	dc8717a8eb64ce3e
+4	644	7570160316553659	CMakeFiles/1lab.dir/main.cpp.obj	29c2b0d43b3733a8
+42	653	7570160316923659	CMakeFiles/1lab.dir/tests/listTests.cpp.obj	a1dc9037a512e523
+4	274	7570162866904440	CMakeFiles/1lab.dir/main.cpp.obj	29c2b0d43b3733a8
+10	324	7570162866974455	CMakeFiles/1lab.dir/tests/tests.cpp.obj	41511e9142cc54a0
+8	347	7570162866944447	CMakeFiles/1lab.dir/tests/listTests.cpp.obj	a1dc9037a512e523
+347	1501	7570162870334443	1lab.exe	dc8717a8eb64ce3e
+12	287	7570166758053571	CMakeFiles/1lab.dir/main.cpp.obj	29c2b0d43b3733a8
+19	330	7570166758123574	CMakeFiles/1lab.dir/tests/tests.cpp.obj	41511e9142cc54a0
+17	351	7570166758103572	CMakeFiles/1lab.dir/tests/listTests.cpp.obj	a1dc9037a512e523
+351	1364	7570166761443582	1lab.exe	dc8717a8eb64ce3e
