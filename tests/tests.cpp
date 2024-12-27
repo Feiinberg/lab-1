@@ -94,5 +94,40 @@ int functional_tests_unqptr() {
     return 0;
 }
 
+int functional_tests_weakptr() {
+    // Test 1: Basic constructor and assignment
+    SharedPtr<int> sp1(new int(10));
+    WeakPtr<int> wp1;
+    wp1 = sp1;
+    assert(wp1.openBlock()->rRefCount() == 1);
+    assert(wp1.openBlock()->rWeakCount() == 1);
 
+    // Test 2: Copy constructor
+    WeakPtr<int> wp2(wp1);
+    assert(wp1.openBlock()->rWeakCount() == 2);
+    assert(wp2.openBlock()->rWeakCount() == 2);
+
+    // Test 3: Assignment operator between weak pointers
+    WeakPtr<int> wp3;
+    wp3 = wp2;
+    assert(wp1.openBlock()->rWeakCount() == 3);
+    assert(wp3.openBlock()->rWeakCount() == 3);
+
+    // Test 4: Constructor from shared pointer
+    SharedPtr<int> sp2(new int(20));
+    WeakPtr<int> wp4(sp2);
+    assert(wp4.openBlock()->rRefCount() == 1);
+    assert(wp4.openBlock()->rWeakCount() == 1);
+
+    // Test 5: Constructor from raw pointer
+    int* raw_ptr = new int(30);
+    WeakPtr<int> wp5(raw_ptr);
+    assert(wp5.openBlock()->rWeakCount() == 1);
+
+    // Test 6: Constructor from value
+    WeakPtr<int> wp6(40);
+    assert(wp6.openBlock()->rWeakCount() == 1);
+
+    return 0;
+}
 
