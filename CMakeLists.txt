@@ -21,7 +21,6 @@ add_executable(1lab
         tests/listTests.h
         main.cpp
         tests/tests.h
-        z.cpp
         tests/listTests.cpp
         tests/tests.cpp
         tests/util/timer.cpp)

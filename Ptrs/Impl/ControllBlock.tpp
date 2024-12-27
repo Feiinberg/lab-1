@@ -62,3 +62,8 @@ template<typename T>
 ControllBlock<T>::operator bool() const noexcept {
     return data != nullptr;
 }
+
+template<typename T>
+T* ControllBlock<T>::getData() const {
+    return data;
+}

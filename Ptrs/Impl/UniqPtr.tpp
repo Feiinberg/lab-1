@@ -96,3 +96,25 @@ UniqPtr<Cl> make_uniq(Args&&... args) {
     UniqPtr<Cl> ptr(newP);
     return ptr;
 }
+
+template<typename T>
+template<typename U>
+UniqPtr<T>::UniqPtr(U* ptr) : ptr(ptr) {}
+
+template<typename T>
+template<typename U>
+UniqPtr<T>::UniqPtr(UniqPtr<U>&& other) noexcept {
+    ptr = other.ptr;
+    other.ptr = nullptr;
+}
+
+template<typename T>
+template<typename U>
+UniqPtr<T>& UniqPtr<T>::operator=(UniqPtr<U>&& other) noexcept {
+    if ((void*)this != (void*)&other) {
+        reset();
+        ptr = other.ptr;
+        other.ptr = nullptr;
+    }
+    return *this;
+}

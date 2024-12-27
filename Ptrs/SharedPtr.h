@@ -48,6 +48,15 @@ public:
 
     // Деструктор
     ~SharedPtr();
+
+    template<typename U>
+    SharedPtr(U* ptr);
+
+    template<typename U>
+    SharedPtr(const SharedPtr<U>& other);
+
+    template<typename U>
+    SharedPtr<T>& operator=(const SharedPtr<U>& other);
 };
 
 // Шаблонные функции make_shared

@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/grish/Documents/C++ Projects/1lab/build",
+  "command": "c:\\users\\grish\\gcc\\bin\\g++.exe -I\"C:/Users/grish/Documents/C++ Projects/1lab/.\" -I\"C:/Users/grish/Documents/C++ Projects/1lab/Ptrs\" -I\"C:/Users/grish/Documents/C++ Projects/1lab/Structures\" -g -std=gnu++14 -o CMakeFiles\\1lab.dir\\main.cpp.obj -c \"C:\\Users\\grish\\Documents\\C++ Projects\\1lab\\main.cpp\"",
+  "file": "C:\\Users\\grish\\Documents\\C++ Projects\\1lab\\main.cpp",
+  "output": "CMakeFiles\\1lab.dir\\main.cpp.obj"
+},
+{
+  "directory": "C:/Users/grish/Documents/C++ Projects/1lab/build",
+  "command": "c:\\users\\grish\\gcc\\bin\\g++.exe -I\"C:/Users/grish/Documents/C++ Projects/1lab/.\" -I\"C:/Users/grish/Documents/C++ Projects/1lab/Ptrs\" -I\"C:/Users/grish/Documents/C++ Projects/1lab/Structures\" -g -std=gnu++14 -o CMakeFiles\\1lab.dir\\tests\\listTests.cpp.obj -c \"C:\\Users\\grish\\Documents\\C++ Projects\\1lab\\tests\\listTests.cpp\"",
+  "file": "C:\\Users\\grish\\Documents\\C++ Projects\\1lab\\tests\\listTests.cpp",
+  "output": "CMakeFiles\\1lab.dir\\tests\\listTests.cpp.obj"
+},
+{
+  "directory": "C:/Users/grish/Documents/C++ Projects/1lab/build",
+  "command": "c:\\users\\grish\\gcc\\bin\\g++.exe -I\"C:/Users/grish/Documents/C++ Projects/1lab/.\" -I\"C:/Users/grish/Documents/C++ Projects/1lab/Ptrs\" -I\"C:/Users/grish/Documents/C++ Projects/1lab/Structures\" -g -std=gnu++14 -o CMakeFiles\\1lab.dir\\tests\\tests.cpp.obj -c \"C:\\Users\\grish\\Documents\\C++ Projects\\1lab\\tests\\tests.cpp\"",
+  "file": "C:\\Users\\grish\\Documents\\C++ Projects\\1lab\\tests\\tests.cpp",
+  "output": "CMakeFiles\\1lab.dir\\tests\\tests.cpp.obj"
+},
+{
+  "directory": "C:/Users/grish/Documents/C++ Projects/1lab/build",
+  "command": "c:\\users\\grish\\gcc\\bin\\g++.exe -I\"C:/Users/grish/Documents/C++ Projects/1lab/.\" -I\"C:/Users/grish/Documents/C++ Projects/1lab/Ptrs\" -I\"C:/Users/grish/Documents/C++ Projects/1lab/Structures\" -g -std=gnu++14 -o CMakeFiles\\1lab.dir\\tests\\util\\timer.cpp.obj -c \"C:\\Users\\grish\\Documents\\C++ Projects\\1lab\\tests\\util\\timer.cpp\"",
+  "file": "C:\\Users\\grish\\Documents\\C++ Projects\\1lab\\tests\\util\\timer.cpp",
+  "output": "CMakeFiles\\1lab.dir\\tests\\util\\timer.cpp.obj"
+}
+]

@@ -58,6 +58,33 @@ build CMakeFiles/1lab.dir/main.cpp.obj: CXX_COMPILER__1lab_unscanned_Debug C$:/U
   TARGET_COMPILE_PDB = CMakeFiles\1lab.dir\
   TARGET_PDB = 1lab.pdb
 
+build CMakeFiles/1lab.dir/tests/listTests.cpp.obj: CXX_COMPILER__1lab_unscanned_Debug C$:/Users/grish/Documents/C++$ Projects/1lab/tests/listTests.cpp || cmake_object_order_depends_target_1lab
+  DEP_FILE = CMakeFiles\1lab.dir\tests\listTests.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/grish/Documents/C++ Projects/1lab/." -I"C:/Users/grish/Documents/C++ Projects/1lab/Ptrs" -I"C:/Users/grish/Documents/C++ Projects/1lab/Structures"
+  OBJECT_DIR = CMakeFiles\1lab.dir
+  OBJECT_FILE_DIR = CMakeFiles\1lab.dir\tests
+  TARGET_COMPILE_PDB = CMakeFiles\1lab.dir\
+  TARGET_PDB = 1lab.pdb
+
+build CMakeFiles/1lab.dir/tests/tests.cpp.obj: CXX_COMPILER__1lab_unscanned_Debug C$:/Users/grish/Documents/C++$ Projects/1lab/tests/tests.cpp || cmake_object_order_depends_target_1lab
+  DEP_FILE = CMakeFiles\1lab.dir\tests\tests.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/grish/Documents/C++ Projects/1lab/." -I"C:/Users/grish/Documents/C++ Projects/1lab/Ptrs" -I"C:/Users/grish/Documents/C++ Projects/1lab/Structures"
+  OBJECT_DIR = CMakeFiles\1lab.dir
+  OBJECT_FILE_DIR = CMakeFiles\1lab.dir\tests
+  TARGET_COMPILE_PDB = CMakeFiles\1lab.dir\
+  TARGET_PDB = 1lab.pdb
+
+build CMakeFiles/1lab.dir/tests/util/timer.cpp.obj: CXX_COMPILER__1lab_unscanned_Debug C$:/Users/grish/Documents/C++$ Projects/1lab/tests/util/timer.cpp || cmake_object_order_depends_target_1lab
+  DEP_FILE = CMakeFiles\1lab.dir\tests\util\timer.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/grish/Documents/C++ Projects/1lab/." -I"C:/Users/grish/Documents/C++ Projects/1lab/Ptrs" -I"C:/Users/grish/Documents/C++ Projects/1lab/Structures"
+  OBJECT_DIR = CMakeFiles\1lab.dir
+  OBJECT_FILE_DIR = CMakeFiles\1lab.dir\tests\util
+  TARGET_COMPILE_PDB = CMakeFiles\1lab.dir\
+  TARGET_PDB = 1lab.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1lab
@@ -66,7 +93,7 @@ build CMakeFiles/1lab.dir/main.cpp.obj: CXX_COMPILER__1lab_unscanned_Debug C$:/U
 #############################################
 # Link the executable 1lab.exe
 
-build 1lab.exe: CXX_EXECUTABLE_LINKER__1lab_Debug CMakeFiles/1lab.dir/main.cpp.obj
+build 1lab.exe: CXX_EXECUTABLE_LINKER__1lab_Debug CMakeFiles/1lab.dir/main.cpp.obj CMakeFiles/1lab.dir/tests/listTests.cpp.obj CMakeFiles/1lab.dir/tests/tests.cpp.obj CMakeFiles/1lab.dir/tests/util/timer.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1lab.dir
