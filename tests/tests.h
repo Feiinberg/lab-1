@@ -28,5 +28,6 @@ int functional_tests_shrdptr() ;;
 
 int functional_tests_unqptr() ;
 
+int functional_tests_weakptr();
 
 

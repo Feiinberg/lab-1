@@ -17,6 +17,7 @@ public:
     WeakPtr& operator=(const WeakPtr& other) noexcept;
     WeakPtr& operator=(SharedPtr<T>& ptr) noexcept;
     virtual ~WeakPtr();
+    ControllBlock<T>* openBlock() const { return block; }
 };
 
 // Подключение файла реализации
